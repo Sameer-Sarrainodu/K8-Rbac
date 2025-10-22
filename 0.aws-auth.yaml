@@ -11,7 +11,7 @@ data:
         - system:bootstrappers
         - system:nodes
   mapUsers: |
-    - userarn:
+    - userarn: arn:aws:iam::968220652823:user/raheem
       username: raheem
       groups:
-        - roboshop-trainee
+        - roboshop
