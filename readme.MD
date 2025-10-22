@@ -19,7 +19,7 @@ Mapping between IAM ROle and K8 Service account
 ```
 eksctl create iamserviceaccount \
 --cluster=$CLUSTER_NAME \
---namespace=kube-system \
+--namespace=roboshop \
 --name=mysql-secret-reader \
 --attach-policy-arn=arn:aws:iam::968220652823:policy/mysql-secret-reader \
 --override-existing-serviceaccounts \
