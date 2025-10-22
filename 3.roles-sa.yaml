@@ -1,3 +1,7 @@
+# when ever a pod uses a service account it gets a token mounted into the pod at this location   /var/run/secrets/kubernetes.io/serviceaccount/token
+# until you explicitly stop the mount.
+#
+# this is useful to the pod to get monitoring of pod if required
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -37,6 +41,6 @@ metadata:
 spec:
   serviceAccountName: roboshop-sa
   containers:
-  - name: busybox
-    image: busybox
-    command: ["sh", "-c", "sleep 3600"]
+  - name: kubectl-test
+    image: bitnami/kubectl:latest
+    command: ["sleep","3600"]
