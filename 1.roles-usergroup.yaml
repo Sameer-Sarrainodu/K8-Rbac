@@ -42,5 +42,5 @@ subjects:
     apiGroup: rbac.authorization.k8s.io
 roleRef:
     kind: Role
-    name: roboshop-junior
+    name: roboshop-lead
     apiGroup: rbac.authorization.k8s.io
