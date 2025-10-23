@@ -4,7 +4,7 @@
 trust and authentication provider
 
 REGION_CODE=us-east-1
-CLUSTER_NAME=roboshop
+CLUSTER_NAME=roboshop-dev
 ACC_ID=968220652823
 ```
 eksctl utils associate-iam-oidc-provider \
