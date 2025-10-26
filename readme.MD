@@ -12,7 +12,11 @@ eksctl utils associate-iam-oidc-provider \
     --cluster $CLUSTER_NAME \
     --approve
 ```
-# create policy of secret and get the arn and paste below command
+# run this command to configure kube api
+```
+eksctl update kubeconfig --region $REGION_CODE --name $CLUSTER_NAME
+```
+
 
 ### Create IAM Role and K8 ServiceAccount.
 Mapping between IAM ROle and K8 Service account
